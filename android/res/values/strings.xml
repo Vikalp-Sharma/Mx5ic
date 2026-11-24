@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mx5ic</string>
+    <string name="title_enhancer">Mx5ic</string>
+    <string name="subtitle_enhancer">Autonomous On-Device AI Music Enhancer</string>
+    <string name="btn_start">START AUTONOMOUS AI MASTERING</string>
+    <string name="btn_stop">STOP AI MASTERING (ACTIVE)</string>
+    <string name="status_idle">Status: Idle (Tap to Start Autonomous AI Mastering)</string>
+    <string name="status_running">Status: Autonomous AI Active (0.58B Conformer)</string>
+    <string name="label_spatial_3d">3D Spatial Vocal Orbit</string>
+    <string name="label_virtual_bass">Psychoacoustic Virtual Bass</string>
+    <string name="label_dialogue">Dialogue &amp; Vocal Clarity</string>
+    <string name="label_profile">Profile: Harman Target (Consumer)</string>
+</resources>

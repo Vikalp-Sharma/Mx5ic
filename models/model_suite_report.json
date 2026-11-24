@@ -1,0 +1,70 @@
+{
+  "models": [
+    {
+      "name": "Neural Bandwidth Extension (BWE)",
+      "file": "bwe_restoration.pt",
+      "size_mb": 42.89,
+      "params": 11231922
+    },
+    {
+      "name": "Streaming 4-Stem Separator",
+      "file": "separator_dialogue.pt",
+      "size_mb": 47.78,
+      "params": 12515530
+    },
+    {
+      "name": "DDSP Tone & Dynamics Controller",
+      "file": "tone_controller.pt",
+      "size_mb": 21.3,
+      "params": 5580978
+    },
+    {
+      "name": "3D Spatializer & Binaural Positioning",
+      "file": "spatializer.pt",
+      "size_mb": 25.22,
+      "params": 6604928
+    },
+    {
+      "name": "Genre & Quality Analyzer",
+      "file": "genre_analyzer.pt",
+      "size_mb": 5.8,
+      "params": 1515917
+    },
+    {
+      "name": "0.5B Conformer Music Intelligence",
+      "file": "mx5ic_conformer_0.5b.pt",
+      "size_mb": 1106.77,
+      "params": 580181072
+    }
+  ],
+  "total_suite_size_mb": 1249.75,
+  "conformer_05b_params": 580181072,
+  "conformer_05b_params_billion": 0.58,
+  "target_met": true,
+  "training_metrics": {
+    "bwe": {
+      "final_loss": 1.1774495840072632,
+      "params": 11231922
+    },
+    "separator": {
+      "final_loss": 1.02516770362854,
+      "params": 12515530
+    },
+    "ddsp": {
+      "final_loss": 1.3993849754333496,
+      "params": 5580978
+    },
+    "spatializer": {
+      "final_loss": 0.17661617696285248,
+      "params": 6604928
+    },
+    "genre": {
+      "final_loss": 3.9210524559020996,
+      "params": 1515917
+    },
+    "conformer_0.5b": {
+      "final_loss": 4.878987789154053,
+      "params": 580181072
+    }
+  }
+}

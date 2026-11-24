@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_obsidian"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- App Icon and Header -->
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/ic_launcher"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Mx5ic Icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_enhancer"
+            android:textColor="@color/glass_cyan"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subtitle_enhancer"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Master Power Activation Button -->
+        <Button
+            android:id="@+id/btnToggleStream"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="@string/btn_start"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#2563EB"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:id="@+id/textStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status_idle"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp" />
+
+        <!-- AUTONOMOUS AI MASTERING CONSOLE (The Hero Card) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/glass_surface"
+            android:padding="20dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="✨ AUTONOMOUS AI MASTERING"
+                    android:textColor="@color/glass_cyan"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/badgeAiActive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100% AUTO"
+                    android:textSize="10sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:background="#059669" />
+            </LinearLayout>
+
+            <!-- Live AI Acoustic Detection Readout -->
+            <TextView
+                android:id="@+id/textAiGenre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🎯 Acoustic Intelligence: Ready to Analyze"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="14dp" />
+
+            <TextView
+                android:id="@+id/textAiDecision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AI Action: Auto-steering 3D Spatial Vocal Orbit &amp; Bass"
+                android:textColor="@color/neon_blue"
+                android:textSize="13sp"
+                android:layout_marginTop="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The 0.58B Conformer AI analyzes track acoustics and automatically steers the optimal mastering settings in real time without manual slider clutter."
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp"
+                android:layout_marginTop="10dp" />
+
+            <!-- Toggle Autonomous Mode Button -->
+            <Button
+                android:id="@+id/btnToggleAutonomous"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:text="AUTONOMOUS AI MODE: ACTIVE"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:background="#0D9488"
+                android:layout_marginTop="14dp" />
+
+            <!-- 3D Spatial Surround Mode Selector Button -->
+            <Button
+                android:id="@+id/btnProfile"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:text="Mode: Cinema 3D Surround"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:background="#1E293B"
+                android:layout_marginTop="8dp" />
+
+            <!-- Adaptive Noise Cancellation Toggle Button -->
+            <Button
+                android:id="@+id/btnToggleNoiseCancellation"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:text="🛡 Noise Cancellation: ACTIVE (-18 dB)"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:background="#059669"
+                android:layout_marginTop="8dp" />
+
+            <!-- Optional manual toggle button -->
+            <Button
+                android:id="@+id/btnToggleManual"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:text="⚙ Show Manual Overrides (Optional)"
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp"
+                android:background="#0F172A"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Optional Collapsible Manual Controls Card -->
+        <LinearLayout
+            android:id="@+id/layoutManualControls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/glass_surface"
+            android:padding="16dp"
+            android:visibility="gone"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MANUAL OVERRIDE ADJUSTMENTS"
+                android:textColor="@color/neon_blue"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="14dp" />
+
+            <!-- 3D Spatial Vocal Orbit Slider -->
+            <TextView
+                android:id="@+id/labelSpatial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3D Spatial Vocal Orbit: 60%"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp" />
+
+            <SeekBar
+                android:id="@+id/seekSpatial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="60"
+                android:layout_marginBottom="14dp" />
+
+            <!-- Virtual Bass Slider -->
+            <TextView
+                android:id="@+id/labelBass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Psychoacoustic Virtual Bass: 45%"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp" />
+
+            <SeekBar
+                android:id="@+id/seekBass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="45"
+                android:layout_marginBottom="14dp" />
+
+            <!-- Dialogue Intelligibility Slider -->
+            <TextView
+                android:id="@+id/labelDialogue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dialogue &amp; Vocal Clarity: 40%"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp" />
+
+            <SeekBar
+                android:id="@+id/seekDialogue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="40"
+                android:layout_marginBottom="6dp" />
+        </LinearLayout>
+
+        <!-- Embedded AI Suite Status Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/glass_surface"
+            android:padding="16dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/textAiSuiteHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✨ Embedded AI Suite: 142.98 MB"
+                android:textColor="@color/glass_cyan"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textAiSuiteDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 Neural Networks Embedded On-Device (BWE, Separator, DDSP, Spatializer, Genre Analyzer)"
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- Informational Footer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[100% On-Device] Mx5ic captures internal music playback, runs real-time AI spatial DSP on this phone, and outputs directly to your earbuds/headphones with zero audible dropouts."
+            android:textColor="#64748B"
+            android:textSize="11sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,11 @@
+{
+  "sample_rate": 48000,
+  "block_size": 128,
+  "rtf": 0.002311,
+  "speedup": 432.63,
+  "raw_peak_db": -0.53,
+  "processed_peak_db": -1.00,
+  "underruns": 0,
+  "overflows": 0,
+  "passed": true
+}

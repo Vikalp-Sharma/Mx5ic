@@ -1,0 +1,9 @@
+[package]
+name = "mx5ic_ui"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+mx5ic_core = { path = "../crates/mx5ic_core" }
+glfw = "0.55"
+gl = "0.14"

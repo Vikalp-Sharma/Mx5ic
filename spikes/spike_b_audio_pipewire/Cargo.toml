@@ -1,0 +1,13 @@
+[package]
+name = "spike_b_audio_pipewire"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cpal = "0.15"
+rtrb = "0.3"
+hound = "3.5"
+
+[[bin]]
+name = "probe"
+path = "src/probe.rs"

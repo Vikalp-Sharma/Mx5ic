@@ -1,0 +1,23 @@
+[package]
+name = "mx5ic_core"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+rtrb = "0.3"
+serde = { version = "1.0", features = ["derive"] }
+
+[[bin]]
+name = "mx5ic_daemon"
+path = "src/bin/daemon.rs"
+
+[[bin]]
+name = "mx5ic_soak"
+path = "src/bin/soak_test.rs"
+
+[[bin]]
+name = "mx5ic_enhance"
+path = "src/bin/enhance_cli.rs"

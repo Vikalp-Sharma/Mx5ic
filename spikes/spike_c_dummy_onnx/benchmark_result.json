@@ -1,0 +1,16 @@
+{
+  "model_path": "spikes/spike_c_dummy_onnx/dummy_causal_enhancer.onnx",
+  "block_samples": 128,
+  "sample_rate": 48000.0,
+  "chunk_duration_ms": 2.6666666666666665,
+  "total_iterations": 10000,
+  "mean_latency_ms": 0.0781960088,
+  "p50_latency_ms": 0.0726955,
+  "p95_latency_ms": 0.11284749999999998,
+  "p99_latency_ms": 0.12521762,
+  "min_latency_ms": 0.064935,
+  "max_latency_ms": 0.236184,
+  "rtf": 0.029323503299999998,
+  "effective_speedup": 34.1023372879188,
+  "passed_rtf_gate": true
+}

@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "crates/mx5ic_core",
+    "ui"
+]
+resolver = "2"

@@ -1,0 +1,11 @@
+{
+  "resolution": "1920x1080",
+  "total_frames": 1000,
+  "mean_fps": 347.17,
+  "p50_frame_time_ms": 2.665,
+  "p95_frame_time_ms": 2.870,
+  "p99_frame_time_ms": 2.907,
+  "min_frame_time_ms": 2.411,
+  "max_frame_time_ms": 2.956,
+  "passed_60fps_gate": true
+}
